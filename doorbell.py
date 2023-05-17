@@ -43,9 +43,9 @@ def run_doorbell_on_image(file):
   plt.show()
 
 
-def crop_image(image, crop_top_bottom_px = 50):
+def crop_image(image, crop_top_bottom_px = 100):
   """
-    Crop 50 pixels from bottom and top to remove webcam text.
+    Crop 100 pixels from bottom and top to remove webcam text.
   """
   height, width = image.shape
   cropped_image = image[crop_top_bottom_px:height-crop_top_bottom_px][0:width]
@@ -84,5 +84,4 @@ def has_fish(image):
 
 
 if __name__ == "__main__":
-  print('a')
   run_doorbell_on_images()
